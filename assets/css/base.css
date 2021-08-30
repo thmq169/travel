@@ -1,0 +1,143 @@
+:root{
+    --white-color:#fff;
+    --black-color:#555;
+    --purple-color:#ba71da;
+    --green-color:#1bbc9b;
+    --red-color:#f76570;
+    --yellow-color:#ffd205;
+    --blue-color:#14b9d5;
+    --header-height:104px;
+    --text-color:#A09A9A;
+    --orage-color:#f3a46b;
+    --yellow-linear-color:linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    --red-linear-color:linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    --purple-linear-color:linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    --green-linear-color:linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+    --orage-linear-color:linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+    --blue-linear-color:linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.btn{
+    border-radius: 100px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:10px 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.package-btn{
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 50px;
+    min-width: 190px;
+
+}
+
+.underline{
+    position: relative;
+    z-index: 2;
+}
+
+.underline::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+    left: 0;
+    bottom:12px;
+}
+
+.underline.purple-underline::after,
+.btn-purple{
+    background-color: var(--purple-color);
+}
+
+.underline.green-underline::after,
+.btn-green{
+    background-color: var(--green-color);
+}
+
+.underline.blue-underline::after,
+.btn-blue{
+    background-color: var(--blue-color);
+}
+
+.underline.red-underline::after,
+.btn-red{
+    background-color: var(--red-color);
+}
+
+.underline.yellow-underline::after,
+.btn-yellow{
+    background-color: var(--yellow-color);
+}
+
+.underline.orage-underline::after,
+.btn-orage{
+    background-color: var(--orage-color);
+}
+
+.bg-yellow-linear{
+    background: var(--yellow-linear-color);
+}
+.bg-red-linear{
+    background: var(--red-linear-color);
+}
+.bg-purple-linear{
+    background: var(--purple-linear-color);
+}
+
+.bg-green-linear{
+    background: var(--green-linear-color);
+}
+
+.bg-orage-linear{
+    background: var(--orage-linear-color);
+}
+
+.bg-blue-linear{
+    background: var(--blue-linear-color);
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
