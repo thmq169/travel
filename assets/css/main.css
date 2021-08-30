@@ -74,6 +74,7 @@
     padding: 15px;
     font-size: 3rem;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header-nav-item:hover > .header-subnav,
@@ -213,6 +214,7 @@
     font-size: 4rem;
     cursor: pointer;
     color: var(--white-color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Header Sub Navigation */
