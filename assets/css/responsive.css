@@ -212,4 +212,14 @@
     .footer-copyright-text:last-child{
         padding-bottom: unset;
     }
+   
+    .section-price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+   
+    .tour-price-old{
+        margin-bottom: 12px;
+    }
 }
